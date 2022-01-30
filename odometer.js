@@ -59,7 +59,7 @@
                 computedDistance = distanceInUnit + " m";    
             } else {
                 distanceInUnit = distance/1000;
-                if (distanceInUnit > 100) {
+                if (distanceInUnit < 100) {
                     distanceInUnit = distance.toFixed(1);
                 } else {
                     distanceInUnit = Math.round(distanceInUnit);
